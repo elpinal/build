@@ -16,7 +16,12 @@ func main() {
 		Config: config.Config{
 			Prompt: "∆ ",
 			StartUpCommand: []byte(`
-			setenv EDITOR vim PAGER less GHQ_ROOT ~/src GOPATH ~
+			setenv (
+				EDITOR   vim
+				PAGER    less
+				GOPATH   ~
+				GHQ_ROOT ~/src
+			)
 			setpath (
 				~/bin
 				~/.gvmn/go/current/bin
