@@ -17,7 +17,13 @@ func main() {
 			Prompt: "∆ ",
 			StartUpCommand: []byte(`
 			setenv EDITOR vim PAGER less
-			setpath ~/bin ~/.gvmn/go/current/bin ~/.vvmn/vim/current/bin /usr/local/bin /usr/local/opt/coreutils/libexec/gnubin
+			setpath (
+				~/bin
+				~/.gvmn/go/current/bin
+				~/.vvmn/vim/current/bin
+				/usr/local/bin
+				/usr/local/opt/coreutils/libexec/gnubin
+			)
 			`),
 		},
 	}
