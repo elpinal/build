@@ -15,6 +15,10 @@ func main() {
 
 		Config: config.Config{
 			Prompt: "∆ ",
+			StartUpCommand: []byte(`
+			setenv EDITOR vim PAGER less
+			setpath /usr/local/bin /usr/local/opt/coreutils/libexec/gnubin
+			`),
 		},
 	}
 	os.Exit(c.Run(os.Args[1:]))
