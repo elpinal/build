@@ -30,14 +30,14 @@ func main() {
 				/usr/local/opt/coreutils/libexec/gnubin
 			)
 			`),
-			Alias: map[string]string{
-				"..":  "cd ..",
-				"ls":  "ls --show-control-chars --color=auto",
-				"la":  "ls -a",
-				"ll":  "ls -l",
-				"lla": "ls -la",
-				"v":   "vim",
-				"g":   "git",
+			Alias: [][2]string{
+				{"..", "cd .."},
+				{"ls", "ls --show-control-chars --color=auto"},
+				{"la", "ls -a"},
+				{"ll", "ls -l"},
+				{"lla", "ls -la"},
+				{"v", "vim"},
+				{"g", "git"},
 			},
 		},
 	}
