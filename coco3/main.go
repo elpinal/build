@@ -26,6 +26,7 @@ func main() {
 				~/bin
 				~/.gvmn/go/current/bin
 				~/.vvmn/vim/current/bin
+				~/.aewo/bin
 				~/.opam/system/bin
 				/usr/local/bin
 				/usr/local/opt/coreutils/libexec/gnubin
