@@ -1,10 +1,13 @@
 package main
 
 import (
+	"fmt"
 	"os"
+	"text/template"
 
 	"github.com/elpinal/coco3/cli"
 	"github.com/elpinal/coco3/config"
+	"github.com/elpinal/color"
 )
 
 func main() {
@@ -14,7 +17,7 @@ func main() {
 		Err: os.Stderr,
 
 		Config: config.Config{
-			Prompt: "∆ ",
+			PromptTmpl: template.Must(template.New("prompt").Parse(fmt.Sprintf("\n%s\n∆ ", color.Wrap("{{.WD}}", color.Yellow)))),
 			StartUpCommand: []byte(`
 			setenv (
 				EDITOR   vim
