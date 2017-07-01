@@ -31,6 +31,7 @@ func main() {
 				~/.vvmn/vim/current/bin
 				~/.aewo/bin
 				~/.opam/system/bin
+				~/.local/bin
 				/usr/local/bin
 				/usr/local/opt/coreutils/libexec/gnubin
 			)
