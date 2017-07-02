@@ -32,6 +32,7 @@ func main() {
 				~/.aewo/bin
 				~/.opam/system/bin
 				~/.local/bin
+                                ~/.psla/bin
 				/usr/local/bin
 				/usr/local/opt/coreutils/libexec/gnubin
 			)
