@@ -45,7 +45,7 @@ func main() {
 				{"lla", "ls -la"},
 				{"v", "vim"},
 				{"g", "git"},
-				{"screen", "let LANG '' in screen"},
+				{"screen", "let LANG UTF-8 in screen"},
 			},
 		},
 	}
