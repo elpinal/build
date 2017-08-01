@@ -33,6 +33,7 @@ func main() {
 				~/.opam/system/bin
 				~/.local/bin
                                 ~/.psla/bin
+				~/.cargo/bin
 				/Library/TeX/texbin
 				/usr/local/bin
 				/usr/local/opt/coreutils/libexec/gnubin
