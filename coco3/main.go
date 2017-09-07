@@ -34,6 +34,7 @@ func main() {
 				~/.local/bin
                                 ~/.psla/bin
 				~/.cargo/bin
+				~/.monumental-ruby/bin
 				/Library/TeX/texbin
 				/usr/local/bin
 				/usr/local/opt/coreutils/libexec/gnubin
