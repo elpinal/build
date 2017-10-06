@@ -50,6 +50,7 @@ func main() {
 				{"g", "git"},
 				{"screen", "let LANG UTF-8 in screen"},
 			},
+			Extra: true,
 		},
 	}
 	os.Exit(c.Run(os.Args[1:]))
