@@ -26,22 +26,20 @@ func main() {
 				"GOPATH":   home,
 				"GHQ_ROOT": filepath.Join(home, "src"),
 			},
-			StartUpCommand: []byte(`
-			setpath (
-				~/bin
-				~/.gvmn/go/current/bin
-				~/.vvmn/vim/current/bin
-				~/.aewo/bin
-				~/.opam/system/bin
-				~/.local/bin
-                                ~/.psla/bin
-				~/.cargo/bin
-				~/.monumental-ruby/bin
-				/Library/TeX/texbin
-				/usr/local/bin
-				/usr/local/opt/coreutils/libexec/gnubin
-			)
-			`),
+			Paths: []string{
+				filepath.Join(home, "bin"),
+				filepath.Join(home, ".gvmn/go/current/bin"),
+				filepath.Join(home, ".vvmn/vim/current/bin"),
+				filepath.Join(home, ".aewo/bin"),
+				filepath.Join(home, ".opam/system/bin"),
+				filepath.Join(home, ".local/bin"),
+				filepath.Join(home, ".psla/bin"),
+				filepath.Join(home, ".cargo/bin"),
+				filepath.Join(home, ".monumental-ruby/bin"),
+				"/Library/TeX/texbin",
+				"/usr/local/bin",
+				"/usr/local/opt/coreutils/libexec/gnubin",
+			},
 			Alias: [][2]string{
 				{"..", "cd .."},
 				{"ls", "ls --show-control-chars --color=auto"},
