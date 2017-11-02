@@ -40,16 +40,6 @@ func main() {
 				"/usr/local/bin",
 				"/usr/local/opt/coreutils/libexec/gnubin",
 			},
-			Alias: [][2]string{
-				{"..", "cd .."},
-				{"ls", "ls --show-control-chars --color=auto"},
-				{"la", "ls -a"},
-				{"ll", "ls -l"},
-				{"lla", "ls -la"},
-				{"v", "vim"},
-				{"g", "git"},
-				{"screen", "let LANG UTF-8 in screen"},
-			},
 			Extra: true,
 		},
 	}
