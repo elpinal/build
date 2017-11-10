@@ -18,7 +18,7 @@ func main() {
 		Out: os.Stdout,
 		Err: os.Stderr,
 
-		Config: config.Config{
+		Config: &config.Config{
 			PromptTmpl: template.Must(template.New("prompt").Parse(fmt.Sprintf("\n%s\n∆ ", color.Wrap("{{.WD}}", color.Yellow)))),
 			Env: map[string]string{
 				"EDITOR":   "vim",
