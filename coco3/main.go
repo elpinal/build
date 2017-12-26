@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"text/template"
 
-	"github.com/elpinal/coco3/cli"
+	"github.com/elpinal/coco3-go-to-bed-by9/cli"
 	"github.com/elpinal/coco3/config"
 	"github.com/elpinal/color"
 )
