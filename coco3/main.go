@@ -25,13 +25,19 @@ func main() {
 				"PAGER":    "less",
 				"GOPATH":   home,
 				"GHQ_ROOT": filepath.Join(home, "src"),
+
+				// OPAM for OCaml
+				"OCAML_TOPLEVEL_PATH":  filepath.Join(home, ".opam/4.06.0/lib/toplevel"),
+				"PERL5LIB":             filepath.Join(home, ".opam/4.06.0/lib/perl5"),
+				"OPAMUTF8MSGS":         "1",
+				"CAML_LD_LIBRARY_PATH": filepath.Join(home, ".opam/4.06.0/lib/stublibs"),
 			},
 			Paths: []string{
 				filepath.Join(home, "bin"),
 				filepath.Join(home, ".gvmn/go/current/bin"),
 				filepath.Join(home, ".vvmn/vim/current/bin"),
 				filepath.Join(home, ".aewo/bin"),
-				filepath.Join(home, ".opam/system/bin"),
+				filepath.Join(home, ".opam/4.06.0/bin"),
 				filepath.Join(home, ".local/bin"),
 				filepath.Join(home, ".psla/bin"),
 				filepath.Join(home, ".cargo/bin"),
