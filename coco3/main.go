@@ -11,7 +11,16 @@ import (
 	"github.com/elpinal/color"
 )
 
+func ocamlVersion() string {
+	s := os.Getenv("COCO3_OCAML_VERSION")
+	if s == "" {
+		s = "4.06.0"
+	}
+	return s
+}
+
 func main() {
+	ocamlv := ocamlVersion()
 	home := os.Getenv("HOME")
 	c := cli.CLI{
 		In:  os.Stdin,
@@ -27,17 +36,17 @@ func main() {
 				"GHQ_ROOT": filepath.Join(home, "src"),
 
 				// OPAM for OCaml
-				"OCAML_TOPLEVEL_PATH":  filepath.Join(home, ".opam/4.06.0/lib/toplevel"),
-				"PERL5LIB":             filepath.Join(home, ".opam/4.06.0/lib/perl5"),
+				"OCAML_TOPLEVEL_PATH":  filepath.Join(home, ".opam/"+ocamlv+"/lib/toplevel"),
+				"PERL5LIB":             filepath.Join(home, ".opam/"+ocamlv+"/lib/perl5"),
 				"OPAMUTF8MSGS":         "1",
-				"CAML_LD_LIBRARY_PATH": filepath.Join(home, ".opam/4.06.0/lib/stublibs"),
+				"CAML_LD_LIBRARY_PATH": filepath.Join(home, ".opam/"+ocamlv+"/lib/stublibs"),
 			},
 			Paths: []string{
 				filepath.Join(home, "bin"),
 				filepath.Join(home, ".gvmn/go/current/bin"),
 				filepath.Join(home, ".vvmn/vim/current/bin"),
 				filepath.Join(home, ".aewo/bin"),
-				filepath.Join(home, ".opam/4.06.0/bin"),
+				filepath.Join(home, ".opam/"+ocamlv+"/bin"),
 				filepath.Join(home, ".local/bin"),
 				filepath.Join(home, ".psla/bin"),
 				filepath.Join(home, ".cargo/bin"),
