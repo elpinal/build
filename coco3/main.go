@@ -40,6 +40,10 @@ func main() {
 				"PERL5LIB":             filepath.Join(home, ".opam/"+ocamlv+"/lib/perl5"),
 				"OPAMUTF8MSGS":         "1",
 				"CAML_LD_LIBRARY_PATH": filepath.Join(home, ".opam/"+ocamlv+"/lib/stublibs"),
+
+				// Rainy for Rain ML.
+				"RAINY_RAIN_ML_URI": filepath.Join(home, "src/github.com/elpinal/rain-ml"),
+				"RAINY_RAIN_VM_URI": filepath.Join(home, "src/github.com/elpinal/rain-vm"),
 			},
 			Paths: []string{
 				filepath.Join(home, "bin"),
