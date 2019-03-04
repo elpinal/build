@@ -55,6 +55,7 @@ func main() {
 				filepath.Join(home, ".psla/bin"),
 				filepath.Join(home, ".cargo/bin"),
 				filepath.Join(home, ".monumental-ruby/bin"),
+				"/usr/local/share/dotnet",
 				"/Library/TeX/texbin",
 				"/usr/local/bin",
 				"/usr/local/opt/coreutils/libexec/gnubin",
